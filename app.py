@@ -1,7 +1,6 @@
 from pywebio.input import *
 from pywebio.output import *
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.by import By
 from selenium import webdriver
 def main():
         
@@ -17,6 +16,8 @@ if __name__ == '__main__':
     import argparse
     from pywebio.platform.tornado_http import start_server as start_http_server
     from pywebio import start_server as start_ws_server
+    from webdriver_manager.chrome import ChromeDriverManager
+    from selenium import webdriver
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", "--port", type=int, default=8080)
